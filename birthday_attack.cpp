@@ -5,7 +5,7 @@
 #include"sm3.h"
 using namespace std;
 
-int main() {//Ö÷º¯Êı
+int main() {
 	int i = 100;
 	int j = 64;
 	map<string, int> hashMap;
@@ -15,7 +15,7 @@ int main() {//Ö÷º¯Êı
 	LARGE_INTEGER nBeginTime;
 	LARGE_INTEGER nEndTime;
 	QueryPerformanceFrequency(&nFreq);
-	QueryPerformanceCounter(&nBeginTime);//¿ªÊ¼¼ÆÊ±  
+	QueryPerformanceCounter(&nBeginTime);//å¼€å§‹è®¡æ—¶  
 
 	while (1) {
 		string n = DecToBin(i); //int i to binary string m
@@ -30,14 +30,14 @@ int main() {//Ö÷º¯Êı
 			hashMap[re.substr(0, j)] = i;
 		}
 		else {
-			QueryPerformanceCounter(&nEndTime);//Í£Ö¹¼ÆÊ±  
+			QueryPerformanceCounter(&nEndTime);//åœæ­¢è®¡æ—¶  
 			cout << " Preimage of the first 64-bit collision: " << iter->second << " and " << i << endl;
 			break;
 		}
 		i++;
 	}
 	time = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)nFreq.QuadPart;  
-	cout << "Time£º" << time << "s" << endl;
+	cout << "Timeï¼š" << time << "s" << endl;
 
 
 
