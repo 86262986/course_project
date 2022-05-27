@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 	int i = 100;
-	int j = 64;
+	int j = 20;
 	map<string, int> hashMap;
 
 	double time = 0;
@@ -31,7 +31,7 @@ int main() {
 		}
 		else {
 			QueryPerformanceCounter(&nEndTime);//停止计时  
-			cout << " Preimage of the first 64-bit collision: " << iter->second << " and " << i << endl;
+			cout << " Preimage of the first 20-bit collision: " << iter->second << " and " << i << endl;
 			break;
 		}
 		i++;
