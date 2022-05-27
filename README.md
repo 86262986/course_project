@@ -5,5 +5,3 @@
 Preimage of the first 20-bit collision: 1002 and 1091
 
 Time：234.48s
-
-![avatar](D:\CLASS\网安创新创业\5.27)
