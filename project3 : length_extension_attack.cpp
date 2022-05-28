@@ -5,14 +5,14 @@ using namespace std;
 
 int main() {
 	string m = "64646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464";
-	string result = iteration(m);  //SM3(m)£¬ÎŞÌî³äµÄhashÖµ
-	cout << "À©Õ¹¹¥»÷Ç°£º" << result << endl;
-	string extend = "61616161616161616161616161616161"; //À©Õ¹128bitÏûÏ¢
+	string result = iteration(m);  //SM3(m)ï¼Œæ— å¡«å……çš„hashå€¼
+	cout << "æ‰©å±•æ”»å‡»å‰ï¼š" << result << endl;
+	string extend = "61616161616161616161616161616161"; //æ‰©å±•128bitæ¶ˆæ¯
 	string extensionB = "", compressB = "";
 	extensionB = extension(HexToBin(extend));
-	//½«Ô­hashÖµÓëÀ©Õ¹ÏûÏ¢½øĞĞcompress
+	//å°†åŸhashå€¼ä¸æ‰©å±•æ¶ˆæ¯è¿›è¡Œcompress
 	compressB = compress(extensionB, result);
 	result = XOR(result, compressB);
-	cout << "À©Õ¹¹¥»÷ºó£º" << result;
+	cout << "æ‰©å±•æ”»å‡»åï¼š" << result;
 }
 
