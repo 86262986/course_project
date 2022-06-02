@@ -7,6 +7,9 @@
 Preimage of the first 20-bit collision: 1002 and 1091
 
 Time：234.48s
+
+#Project 2: The Rho method of reduced SM3
+
 # Project 3: length extension attack of reduced SM3
 ## 代码文件
 1、project3 : length_extension_attack.cpp
