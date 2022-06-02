@@ -3,7 +3,7 @@
 #include"sm3.h"
 using namespace std;
 
-string f(string n) { //¶Ô¶ş½øÖÆ×Ö·û´®n×ösm3µÄhash£¬·µ»Ø¶ş½øÖÆ×Ö·û´®½á¹û
+string f(string n) { //å¯¹äºŒè¿›åˆ¶å­—ç¬¦ä¸²nåšsm3çš„hashï¼Œè¿”å›äºŒè¿›åˆ¶å­—ç¬¦ä¸²ç»“æœ
 	string m = BinToHex(n);
 	string paddingValue = padding(m);
 	string result = iteration(paddingValue);
@@ -30,5 +30,5 @@ int main() {
 			return 0;
 		}
 	}
-	cout << "Time£º" << time << "s" << endl;
+	cout << "Timeï¼š" << time << "s" << endl;
 }
