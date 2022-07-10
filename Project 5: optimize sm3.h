@@ -4,7 +4,7 @@
 namespace SM3 {
 	typedef struct SM3Context {
 		unsigned int intermediateHash[SM3_HASH_SIZE / 4];
-		unsigned char messageBlock[64];//512λ���ݿ�
+		unsigned char messageBlock[64];//512Î»Êý¾Ý¿é
 	} SM3Context;
 
 	unsigned char *SM3Calc(const unsigned char *message,
