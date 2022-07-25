@@ -10,16 +10,16 @@ int BinToDec(string str);
 string DecToBin(int str);
 int HexToDec(string str);
 string DecToHex(int str);
-string LeftShift(string str, int len); //Ñ­»·×óÒÆ
+string LeftShift(string str, int len); //å¾ªç¯å·¦ç§»
 string XOR(string str1, string str2);
 string AND(string str1, string str2);
 string OR(string str1, string str2);
 string NOT(string str);
-char binXor(char str1, char str2); //µ¥±ÈÌØÒì»ò
-char binAnd(char str1, char str2); //µ¥±ÈÌØÓë
+char binXor(char str1, char str2); //å•æ¯”ç‰¹å¼‚æˆ–
+char binAnd(char str1, char str2); //å•æ¯”ç‰¹ä¸
 string ModAdd(string str1, string str2);
 
-string padding(string str) {//¶ÔÊı¾İ½øĞĞÌî³ä 
+string padding(string str) {//å¯¹æ•°æ®è¿›è¡Œå¡«å…… 
 	string res = str;
 	int res_length = res.size() * 4;
 	res += "8";
@@ -193,7 +193,7 @@ string DecToHex(int str) {
 	return hex;
 }
 
-string LeftShift(string str, int len) {//Ñ­»·×óÒÆlenÎ»
+string LeftShift(string str, int len) {//å¾ªç¯å·¦ç§»lenä½
 	string res = HexToBin(str);
 	res = res.substr(len) + res.substr(0, len);
 	return BinToHex(res);
@@ -258,15 +258,15 @@ string NOT(string str) {
 	return BinToHex(res);
 }
 
-char binXor(char str1, char str2) {//µ¥±ÈÌØÒì»ò
+char binXor(char str1, char str2) {//å•æ¯”ç‰¹å¼‚æˆ–
 	return str1 == str2 ? '0' : '1';
 }
 
-char binAnd(char str1, char str2) {//µ¥±ÈÌØÓë
+char binAnd(char str1, char str2) {//å•æ¯”ç‰¹ä¸
 	return (str1 == '1' && str2 == '1') ? '1' : '0';
 }
 
-string ModAdd(string str1, string str2) {//mod 2^32ÔËËã
+string ModAdd(string str1, string str2) {//mod 2^32è¿ç®—
 	string res1 = HexToBin(str1);
 	string res2 = HexToBin(str2);
 	char temp = '0';
