@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-	int i = 100;
+	int i = 0;
 	int j = 20;
 	map<string, int> hashMap;
 
