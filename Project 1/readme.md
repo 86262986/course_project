@@ -2,8 +2,7 @@
 ## 项目名称
 Implement the naïve birthday attack of reduced SM3
 ## 项目文件名
-1、**project 1: birthday_attack.cpp** (链接)
-2、**Project1-3: SM3.h**
+
 
 # 代码说明  
 1、逐次计算sm3(m)的值re，准备找到前20bit的碰撞
