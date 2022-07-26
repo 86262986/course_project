@@ -45,7 +45,7 @@ break;
 注：添加头文件Project1-3: SM3.h时，文件名需改成sm3.h
 运行结果：打印前20bit碰撞的原像，及所用时间
 # 代码运行全过程截图
-![](https://github.z-o.top/86262986/course_project/blob/main/picture/Pasted%20image%2020220726153157.png)
+![结果](https://github.z-o.top/86262986/course_project/blob/main/picture/Pasted%20image%2020220726153157.png)
 
 # 参考文献
 无
