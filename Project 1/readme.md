@@ -1,8 +1,12 @@
 # **项目**简介
 ## 项目名称
-Implement the naïve birthday attack of reduced SM3
-## 项目文件名
+Project 1：Implement the naïve birthday attack of reduced SM3
+## 项目包含文件
+文件所在仓库：[course_project](/course_project)
 
+1、[sm3.h](/Project1-3:%20SM3.h)
+
+2、[birthday_attack.cpp](/project%201:%20birthday_attack.cpp)
 
 # 代码说明  
 1、逐次计算sm3(m)的值re，准备找到前20bit的碰撞
@@ -18,7 +22,9 @@ string result = iteration(paddingValue); //SM3(m) value
 string re = HexToBin(result);
 ```
 2、找到前20bit的碰撞：
+
 在每次计算之后，根据re的前20bit，在字典中查找是否有相同的前20bit的碰撞。
+
 如果找到碰撞则成功，否则将i(原像m的十进制数字表示)和re前20bit存放入字典中，继续寻找碰撞。
 ```C++
 map<string, int>::iterator iter = hashMap.find(re.substr(0, j));
@@ -42,10 +48,12 @@ break;
 
 # 运行指导
 实验环境：Visual Studio 2022
-注：添加头文件Project1-3: SM3.h时，文件名需改成sm3.h
+
+注：添加头文件[sm3.h](/Project1-3:%20SM3.h)时，文件名需改成sm3.h
+
 运行结果：打印前20bit碰撞的原像，及所用时间
 # 代码运行全过程截图
-![结果](https://github.z-o.top/86262986/course_project/blob/main/picture/Pasted%20image%2020220726153157.png)
+![image](/picture/Pasted%20image%2020220726153157.png)
 
 # 参考文献
 无
